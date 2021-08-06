@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F3D51E16-AB79-42DC-B5DC-F06E437C6CE0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A02F2F8-92A9-459D-B202-5A02E81A566B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Supermomos/Classes/Service/DataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getUserList(success:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38840E44-85C8-4901-8120-0F38E766FE55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Supermomos/Base/BaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getRequest(_:success:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6012202-8D89-4971-818E-BA50E6672EDB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Supermomos/Base/BaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "postRequest(_:_:success:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1339E7E0-7EDA-4E02-93FD-52E2DA12506B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Supermomos/Base/BaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "getRequest(_:_:success:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B886A27A-0968-4905-BADF-CFB8741459AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Supermomos/Base/BaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "postRequest(_:_:success:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCBD0C75-2C45-49B5-BBEE-85A59CC4A790"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Supermomos/Base/BaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "postRequest(_:_:success:fail:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BCBD0C75-2C45-49B5-BBEE-85A59CC4A790 - 37161354c9684b6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Supermomos.BaseService.postRequest(_: Swift.String, _: Swift.Dictionary&lt;Swift.String, Any&gt;, success: (SwiftyJSON.JSON) -&gt; (), fail: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "Supermomos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhtien/Supermomos/Supermomos/Base/BaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  uuid = "BCBD0C75-2C45-49B5-BBEE-85A59CC4A790 - 72a0c92e060d4123"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in static Supermomos.BaseService.postRequest(_: Swift.String, _: Swift.Dictionary&lt;Swift.String, Any&gt;, success: (SwiftyJSON.JSON) -&gt; (), fail: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "Supermomos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhtien/Supermomos/Supermomos/Base/BaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B8DB84D-4598-4281-9E6C-9B8C963AD4C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Supermomos/Base/BaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getRequest(_:_:success:fail:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B8DB84D-4598-4281-9E6C-9B8C963AD4C9 - d74c72911eb03710"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Supermomos.BaseService.getRequest(_: Swift.String, _: Swift.Dictionary&lt;Swift.String, Any&gt;, success: (SwiftyJSON.JSON) -&gt; (), fail: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "Supermomos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhtien/Supermomos/Supermomos/Base/BaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  uuid = "8B8DB84D-4598-4281-9E6C-9B8C963AD4C9 - 28b1a5bb69cf8f52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in static Supermomos.BaseService.getRequest(_: Swift.String, _: Swift.Dictionary&lt;Swift.String, Any&gt;, success: (SwiftyJSON.JSON) -&gt; (), fail: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "Supermomos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minhtien/Supermomos/Supermomos/Base/BaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

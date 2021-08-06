@@ -37,7 +37,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 }
             })
         Realm.Configuration.defaultConfiguration = config
-        print(config.fileURL?.path)
+        //print(config.fileURL?.path)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

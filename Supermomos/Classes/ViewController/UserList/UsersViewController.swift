@@ -7,9 +7,7 @@
 
 import UIKit
 import Toast
-import ESPullToRefresh
 import RxSwift
-import RxRealm
 import RxCocoa
 import RealmSwift
 
@@ -18,36 +16,51 @@ class UsersViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     private let bag = DisposeBag()
     private var userListViewModel: UserListViewModel!
+    @IBOutlet weak var networkIconImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        userListViewModel = UserListViewModel.init()
-        self.showProgress()
-        startFetch()
-        bindToTableView()
-        handleSelectedRow()
+        showProgress()
+        setupViewModel()
     }
 
     func setupTableView(){
         tableView.register(UINib.init(nibName: UserListCell.identifier(), bundle: nil), forCellReuseIdentifier: UserListCell.identifier())
         tableView.delegate = nil
         tableView.dataSource = nil
-        tableView.es.addPullToRefresh { [weak self] in
-            self?.tableView.delegate = nil
-            self?.tableView.dataSource = nil
-            self?.startFetch()
+        tableView.setLoadMoreEnable(true)
+        let animator = TextLoadingAnimator()
+        tableView.addPullToRefresh(withAnimator: animator, height: 60) { [weak self] in
+            self?.startFetchData()
         }
     }
 
 }
 
 extension UsersViewController {
-    fileprivate func startFetch(){
+    fileprivate func setupViewModel(){
+        userListViewModel = UserListViewModel.init()
+        userListViewModel.observerNetwork()
+        startFetchData()
+        checkNetwork()
+        bindToTableView()
+        handleSelectedRow()
+    }
+    fileprivate func startFetchData(){
         userListViewModel.fetchUserList()
     }
+    
+    fileprivate func checkNetwork(){
+        userListViewModel.networkStatus.bind(to: networkIconImageView.rx.isHidden).disposed(by: bag)
+    }
+    
     fileprivate func bindToTableView(){
         self.hideProgress()
+        userListViewModel.listUser.subscribe { [weak self] event in
+            self?.tableView.stopPullToRefresh()
+        }.disposed(by: bag)
+        
         userListViewModel.listUser.bind(to: tableView.rx.items(cellIdentifier: UserListCell.identifier(), cellType: UserListCell.self)){ row, item, cell in
             cell.loadData(item)
         }.disposed(by: bag)
@@ -60,10 +73,11 @@ extension UsersViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 self.tableView.deselectRow(at: indexPath, animated: true)
             }
-            print(item.login)
+            let userDetailVC = UserDetailViewController()
+            userDetailVC.userId = item.id
+            self.navigationController?.pushViewController(userDetailVC, animated: true)
         }.disposed(by: bag)
     }
-    
 }
 
 

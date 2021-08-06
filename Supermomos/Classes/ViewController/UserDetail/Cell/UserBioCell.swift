@@ -7,17 +7,20 @@
 
 import UIKit
 
-class UserBioCell: BaseTableViewCell {
+class UserBioCell: BaseUserCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    override func loadData(_ user: User) {
+        super.loadData(user)
+        titleLabel.text = user.bio
+        contentLabel.text = user.company
     }
     
 }

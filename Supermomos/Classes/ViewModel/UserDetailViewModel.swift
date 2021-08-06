@@ -9,43 +9,50 @@ import Foundation
 import RxSwift
 import RxCocoa
 import RealmSwift
-import RxRealm
+import Reachability
 
 
 class UserDetailViewModel {
     private let bag = DisposeBag()
-    let user =  AsyncSubject<User>()
-    let reachability = Networker.shared
-    var userId : String!
+    let user = BehaviorRelay<User>(value: User())
+    let reachability = try! Reachability()
+    var networkStatus = BehaviorRelay<Bool>(value: false)
+
+    func observerNetwork(){
+        reachability.whenReachable = { reachability in
+            self.networkStatus.accept(true)
+        }
+        reachability.whenUnreachable = { _ in
+            self.networkStatus.accept(false)
+        }
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
+    }
     
-    func fetchUser(){
-        if reachability.currentStatus != .notReachable {
-            fetchOnline()
-        }else{//network not available
-            fetchLocal()
+    func fetchUser(_ id: Int){
+        if reachability.connection != .unavailable{
+            fetchOnline(id)
+        } else {
+            fetchLocal(id)
         }
     }
     
     
-    func fetchOnline(){
-        DataService.getUserDetail(userId) {
-            self.fetchLocal()
+    func fetchOnline(_ id: Int){
+        DataService.getUserDetailThenSaveLocal(id) {
+            self.fetchLocal(id)
         } fail: { error in
-            self.user.onError(error)
+            self.fetchLocal(id)
         }
     }
     
-    func fetchLocal(){
+    func fetchLocal(_ id: Int){
         let realm = try! Realm()
-        if let user = realm.object(ofType: User.self, forPrimaryKey: userId){
-            self.user.onNext(user)
+        if let object = realm.object(ofType: User.self, forPrimaryKey: id){
+            user.accept(object)
         }
-        self.user.onCompleted()
     }
-    
-    
-    func resetData(){
-        
-    }
-    
 }

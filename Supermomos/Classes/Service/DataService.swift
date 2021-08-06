@@ -11,7 +11,7 @@ import RealmSwift
 import SwiftyJSON
 
 struct DataService {
-    static func getUserList(success: @escaping () -> Void, fail: @escaping (Error) -> Void) {
+    static func getUserListThenSaveLocal(success: @escaping () -> Void, fail: @escaping (Error) -> Void) {
         let realm = try! Realm()
 
         BaseService.getRequest(UserURL) { json in
@@ -31,9 +31,9 @@ struct DataService {
     }
     
     
-    static func getUserDetail(_ id: String, success: @escaping () -> Void, fail: @escaping (Error) -> Void) {
+    static func getUserDetailThenSaveLocal(_ id: Int, success: @escaping () -> Void, fail: @escaping (Error) -> Void) {
         let realm = try! Realm()
-        let urlDetailURL = UserURL + "/" + id
+        let urlDetailURL = UserDetailURL + id.description
         
         BaseService.getRequest(urlDetailURL) { json in
             if let dto = UserDTO.init(JSON: json.dictionaryObject!) {

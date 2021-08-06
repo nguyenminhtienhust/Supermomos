@@ -29,21 +29,12 @@
         }
       },
       {
-        "package": "OHHTTPStubs",
-        "repositoryURL": "https://github.com/AliSoftware/OHHTTPStubs.git",
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
         "state": {
           "branch": null,
-          "revision": "12f19662426d0434d6c330c6974d53e2eb10ecd9",
-          "version": "9.1.0"
-        }
-      },
-      {
-        "package": "ESPullToRefresh",
-        "repositoryURL": "https://github.com/eggswift/pull-to-refresh.git",
-        "state": {
-          "branch": null,
-          "revision": "a858aaeb44abc6428af916e8496429d244fac053",
-          "version": "2.9.3"
+          "revision": "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+          "version": "5.1.0"
         }
       },
       {
@@ -62,24 +53,6 @@
           "branch": null,
           "revision": "e72b3078bfc5c3f69a0b18f7a220be27e28c463f",
           "version": "11.2.0"
-        }
-      },
-      {
-        "package": "RxAlamofire",
-        "repositoryURL": "https://github.com/RxSwiftCommunity/RxAlamofire.git",
-        "state": {
-          "branch": null,
-          "revision": "9535b58695b91fb67f56d58d6fd0c76462d7743a",
-          "version": "6.1.2"
-        }
-      },
-      {
-        "package": "RxRealm",
-        "repositoryURL": "https://github.com/RxSwiftCommunity/RxRealm.git",
-        "state": {
-          "branch": null,
-          "revision": "73b8d93bddb5b1c012ae96f1f3858d5c720dea1b",
-          "version": "5.0.2"
         }
       },
       {

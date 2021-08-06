@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F29BD16C26BD484900981BF4 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = F29BD16B26BD484900981BF4 /* Toast */; };
-		F29BD17826BD5E4E00981BF4 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F29BD17726BD5E4E00981BF4 /* RxAlamofire */; };
-		F29BD17D26BD62C000981BF4 /* ReachableProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD17A26BD62C000981BF4 /* ReachableProtocols.swift */; };
-		F29BD17E26BD62C000981BF4 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD17B26BD62C000981BF4 /* Networker.swift */; };
-		F29BD17F26BD62C000981BF4 /* Notification+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD17C26BD62C000981BF4 /* Notification+Extention.swift */; };
 		F29BD18226BD685B00981BF4 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD18026BD685B00981BF4 /* UserListCell.swift */; };
 		F29BD18326BD685B00981BF4 /* UserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29BD18126BD685B00981BF4 /* UserListCell.xib */; };
 		F29BD18526BD6B5F00981BF4 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD18426BD6B5F00981BF4 /* UserDetailViewModel.swift */; };
@@ -56,6 +52,19 @@
 		F29BD1D926BD752B00981BF4 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1B226BD752B00981BF4 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
 		F29BD1DA26BD752B00981BF4 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1B326BD752B00981BF4 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
 		F29BD1DB26BD752C00981BF4 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1B426BD752B00981BF4 /* NVActivityIndicatorAnimationOrbit.swift */; };
+		F29BD1DE26BD7F3100981BF4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F29BD1DD26BD7F3100981BF4 /* Realm */; };
+		F29BD1E026BD7F3100981BF4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F29BD1DF26BD7F3100981BF4 /* RealmSwift */; };
+		F29BD1E226BD8CC900981BF4 /* BaseUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1E126BD8CC900981BF4 /* BaseUserCell.swift */; };
+		F29BD1E426BD9AC700981BF4 /* ColorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1E326BD9AC700981BF4 /* ColorConstant.swift */; };
+		F29BD1E626BD9B5100981BF4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1E526BD9B5100981BF4 /* UIColor+Extension.swift */; };
+		F29BD1E826BDA35C00981BF4 /* BehaviorRelay+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1E726BDA35C00981BF4 /* BehaviorRelay+Extension.swift */; };
+		F29BD1F026BDAB0000981BF4 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1EB26BDAB0000981BF4 /* PullToRefresh.swift */; };
+		F29BD1F126BDAB0000981BF4 /* LoadMoreViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1EC26BDAB0000981BF4 /* LoadMoreViewAnimator.swift */; };
+		F29BD1F226BDAB0000981BF4 /* LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1ED26BDAB0000981BF4 /* LoadMore.swift */; };
+		F29BD1F326BDAB0000981BF4 /* PullToRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1EE26BDAB0000981BF4 /* PullToRefreshAnimator.swift */; };
+		F29BD1F426BDAB0000981BF4 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1EF26BDAB0000981BF4 /* UIScrollView+Extensions.swift */; };
+		F29BD1F626BDB28C00981BF4 /* TextLoadingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29BD1F526BDB28C00981BF4 /* TextLoadingAnimator.swift */; };
+		F29BD1F926BDBB0700981BF4 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = F29BD1F826BDBB0700981BF4 /* Reachability */; };
 		F2C96D0826BCDBB700A75134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C96D0726BCDBB700A75134 /* AppDelegate.swift */; };
 		F2C96D0A26BCDBB700A75134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C96D0926BCDBB700A75134 /* SceneDelegate.swift */; };
 		F2C96D1126BCDBB800A75134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C96D1026BCDBB800A75134 /* Assets.xcassets */; };
@@ -64,9 +73,7 @@
 		F2C96D1F26BCDCF900A75134 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F2C96D1E26BCDCF900A75134 /* RxRelay */; };
 		F2C96D2126BCDCF900A75134 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F2C96D2026BCDCF900A75134 /* RxCocoa */; };
 		F2C96D2326BCDCF900A75134 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F2C96D2226BCDCF900A75134 /* RxBlocking */; };
-		F2C96D2626BCDDEB00A75134 /* RxRealm in Frameworks */ = {isa = PBXBuildFile; productRef = F2C96D2526BCDDEB00A75134 /* RxRealm */; };
 		F2C96D2926BCDF9D00A75134 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F2C96D2826BCDF9D00A75134 /* Kingfisher */; };
-		F2C96D2C26BCE27D00A75134 /* ESPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = F2C96D2B26BCE27D00A75134 /* ESPullToRefresh */; };
 		F2C96D2F26BCE2B900A75134 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F2C96D2E26BCE2B900A75134 /* Alamofire */; };
 		F2C96D3726BCE38600A75134 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C96D3626BCE38600A75134 /* User.swift */; };
 		F2C96D3926BCE7CA00A75134 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C96D3826BCE7CA00A75134 /* DataService.swift */; };
@@ -90,9 +97,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F29BD17A26BD62C000981BF4 /* ReachableProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachableProtocols.swift; sourceTree = "<group>"; };
-		F29BD17B26BD62C000981BF4 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
-		F29BD17C26BD62C000981BF4 /* Notification+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Extention.swift"; sourceTree = "<group>"; };
 		F29BD18026BD685B00981BF4 /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
 		F29BD18126BD685B00981BF4 /* UserListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListCell.xib; sourceTree = "<group>"; };
 		F29BD18426BD6B5F00981BF4 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
@@ -137,6 +141,16 @@
 		F29BD1B226BD752B00981BF4 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
 		F29BD1B326BD752B00981BF4 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
 		F29BD1B426BD752B00981BF4 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		F29BD1E126BD8CC900981BF4 /* BaseUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUserCell.swift; sourceTree = "<group>"; };
+		F29BD1E326BD9AC700981BF4 /* ColorConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstant.swift; sourceTree = "<group>"; };
+		F29BD1E526BD9B5100981BF4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F29BD1E726BDA35C00981BF4 /* BehaviorRelay+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BehaviorRelay+Extension.swift"; sourceTree = "<group>"; };
+		F29BD1EB26BDAB0000981BF4 /* PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		F29BD1EC26BDAB0000981BF4 /* LoadMoreViewAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreViewAnimator.swift; sourceTree = "<group>"; };
+		F29BD1ED26BDAB0000981BF4 /* LoadMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMore.swift; sourceTree = "<group>"; };
+		F29BD1EE26BDAB0000981BF4 /* PullToRefreshAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshAnimator.swift; sourceTree = "<group>"; };
+		F29BD1EF26BDAB0000981BF4 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
+		F29BD1F526BDB28C00981BF4 /* TextLoadingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLoadingAnimator.swift; sourceTree = "<group>"; };
 		F2C96D0426BCDBB700A75134 /* Supermomos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supermomos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C96D0726BCDBB700A75134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C96D0926BCDBB700A75134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,33 +182,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29BD16C26BD484900981BF4 /* Toast in Frameworks */,
+				F29BD1F926BDBB0700981BF4 /* Reachability in Frameworks */,
 				F2C96D6526BD06F900A75134 /* SwiftyJSON in Frameworks */,
 				F2C96D2926BCDF9D00A75134 /* Kingfisher in Frameworks */,
+				F29BD1E026BD7F3100981BF4 /* RealmSwift in Frameworks */,
 				F2C96D2F26BCE2B900A75134 /* Alamofire in Frameworks */,
 				F2C96D2126BCDCF900A75134 /* RxCocoa in Frameworks */,
 				F2C96D2326BCDCF900A75134 /* RxBlocking in Frameworks */,
+				F29BD1DE26BD7F3100981BF4 /* Realm in Frameworks */,
 				F2C96D1F26BCDCF900A75134 /* RxRelay in Frameworks */,
 				F2C96D6A26BD093C00A75134 /* ObjectMapper in Frameworks */,
-				F2C96D2C26BCE27D00A75134 /* ESPullToRefresh in Frameworks */,
-				F29BD17826BD5E4E00981BF4 /* RxAlamofire in Frameworks */,
 				F2C96D1D26BCDCF900A75134 /* RxSwift in Frameworks */,
-				F2C96D2626BCDDEB00A75134 /* RxRealm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F29BD17926BD62C000981BF4 /* Networker */ = {
-			isa = PBXGroup;
-			children = (
-				F29BD17A26BD62C000981BF4 /* ReachableProtocols.swift */,
-				F29BD17B26BD62C000981BF4 /* Networker.swift */,
-				F29BD17C26BD62C000981BF4 /* Notification+Extention.swift */,
-			);
-			path = Networker;
-			sourceTree = "<group>";
-		};
 		F29BD18A26BD752B00981BF4 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +267,19 @@
 				F29BD1B426BD752B00981BF4 /* NVActivityIndicatorAnimationOrbit.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		F29BD1EA26BDAB0000981BF4 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				F29BD1F526BDB28C00981BF4 /* TextLoadingAnimator.swift */,
+				F29BD1EB26BDAB0000981BF4 /* PullToRefresh.swift */,
+				F29BD1EC26BDAB0000981BF4 /* LoadMoreViewAnimator.swift */,
+				F29BD1ED26BDAB0000981BF4 /* LoadMore.swift */,
+				F29BD1EE26BDAB0000981BF4 /* PullToRefreshAnimator.swift */,
+				F29BD1EF26BDAB0000981BF4 /* UIScrollView+Extensions.swift */,
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 		F2C96CFB26BCDBB700A75134 = {
@@ -384,6 +401,7 @@
 		F2C96D4D26BCF0D200A75134 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F29BD1E126BD8CC900981BF4 /* BaseUserCell.swift */,
 				F2C96D4E26BCF0F600A75134 /* UserInfoCell.swift */,
 				F2C96D4F26BCF0F600A75134 /* UserInfoCell.xib */,
 				F2C96D5226BCF13500A75134 /* UserStatisticCell.swift */,
@@ -407,8 +425,8 @@
 		F2C96D5B26BCF1A400A75134 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				F29BD1EA26BDAB0000981BF4 /* Refresh */,
 				F29BD18A26BD752B00981BF4 /* Loading */,
-				F29BD17926BD62C000981BF4 /* Networker */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -416,7 +434,9 @@
 		F2C96D5C26BCF1AB00A75134 /* Extentsion */ = {
 			isa = PBXGroup;
 			children = (
+				F29BD1E526BD9B5100981BF4 /* UIColor+Extension.swift */,
 				F2C96D5D26BCF47200A75134 /* NSObject+Extension.swift */,
+				F29BD1E726BDA35C00981BF4 /* BehaviorRelay+Extension.swift */,
 			);
 			path = Extentsion;
 			sourceTree = "<group>";
@@ -425,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				F2C96D6C26BD097800A75134 /* ServerConfig.swift */,
+				F29BD1E326BD9AC700981BF4 /* ColorConstant.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -450,14 +471,14 @@
 				F2C96D1E26BCDCF900A75134 /* RxRelay */,
 				F2C96D2026BCDCF900A75134 /* RxCocoa */,
 				F2C96D2226BCDCF900A75134 /* RxBlocking */,
-				F2C96D2526BCDDEB00A75134 /* RxRealm */,
 				F2C96D2826BCDF9D00A75134 /* Kingfisher */,
-				F2C96D2B26BCE27D00A75134 /* ESPullToRefresh */,
 				F2C96D2E26BCE2B900A75134 /* Alamofire */,
 				F2C96D6426BD06F900A75134 /* SwiftyJSON */,
 				F2C96D6926BD093C00A75134 /* ObjectMapper */,
 				F29BD16B26BD484900981BF4 /* Toast */,
-				F29BD17726BD5E4E00981BF4 /* RxAlamofire */,
+				F29BD1DD26BD7F3100981BF4 /* Realm */,
+				F29BD1DF26BD7F3100981BF4 /* RealmSwift */,
+				F29BD1F826BDBB0700981BF4 /* Reachability */,
 			);
 			productName = Supermomos;
 			productReference = F2C96D0426BCDBB700A75134 /* Supermomos.app */;
@@ -488,14 +509,13 @@
 			mainGroup = F2C96CFB26BCDBB700A75134;
 			packageReferences = (
 				F2C96D1B26BCDCF900A75134 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				F2C96D2426BCDDEB00A75134 /* XCRemoteSwiftPackageReference "RxRealm" */,
 				F2C96D2726BCDF9D00A75134 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				F2C96D2A26BCE27D00A75134 /* XCRemoteSwiftPackageReference "pull-to-refresh" */,
 				F2C96D2D26BCE2B900A75134 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F2C96D6326BD06F900A75134 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				F2C96D6826BD093C00A75134 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				F29BD16A26BD484900981BF4 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				F29BD17626BD5E4E00981BF4 /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				F29BD1DC26BD7F3100981BF4 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				F29BD1F726BDBB0700981BF4 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = F2C96D0526BCDBB700A75134 /* Products */;
 			projectDirPath = "";
@@ -532,9 +552,11 @@
 				F29BD1C426BD752B00981BF4 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
 				F29BD1C126BD752B00981BF4 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
 				F29BD1C226BD752B00981BF4 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				F29BD1F026BDAB0000981BF4 /* PullToRefresh.swift in Sources */,
 				F29BD18226BD685B00981BF4 /* UserListCell.swift in Sources */,
 				F2C96D5A26BCF17200A75134 /* BaseViewController.swift in Sources */,
 				F29BD1CF26BD752B00981BF4 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				F29BD1F226BDAB0000981BF4 /* LoadMore.swift in Sources */,
 				F29BD1C026BD752B00981BF4 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
 				F29BD1D126BD752B00981BF4 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
 				F29BD1D826BD752B00981BF4 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
@@ -542,6 +564,7 @@
 				F29BD1D726BD752B00981BF4 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
 				F29BD1C826BD752B00981BF4 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
 				F29BD1BD26BD752B00981BF4 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				F29BD1E826BDA35C00981BF4 /* BehaviorRelay+Extension.swift in Sources */,
 				F2C96D3726BCE38600A75134 /* User.swift in Sources */,
 				F29BD1C726BD752B00981BF4 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
 				F29BD1BA26BD752B00981BF4 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
@@ -550,17 +573,20 @@
 				F29BD1D226BD752B00981BF4 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
 				F2C96D4626BCE81E00A75134 /* UserListViewModel.swift in Sources */,
 				F29BD1CE26BD752B00981BF4 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				F29BD1E626BD9B5100981BF4 /* UIColor+Extension.swift in Sources */,
 				F29BD1BB26BD752B00981BF4 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
 				F29BD1BC26BD752B00981BF4 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
 				F29BD1D326BD752B00981BF4 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
 				F29BD1CC26BD752B00981BF4 /* NVActivityIndicatorAnimationBlank.swift in Sources */,
 				F2C96D6726BD089C00A75134 /* UserDTO.swift in Sources */,
+				F29BD1F626BDB28C00981BF4 /* TextLoadingAnimator.swift in Sources */,
 				F29BD1B626BD752B00981BF4 /* NVActivityIndicatorViewable.swift in Sources */,
 				F29BD1B826BD752B00981BF4 /* NVActivityIndicatorShape.swift in Sources */,
 				F29BD1C326BD752B00981BF4 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
 				F29BD18826BD6F5900981BF4 /* UserBioCell.swift in Sources */,
 				F29BD1BF26BD752B00981BF4 /* NVActivityIndicatorAnimationBallDoubleBounce.swift in Sources */,
 				F2C96D4926BCE8DE00A75134 /* UserDetailViewController.swift in Sources */,
+				F29BD1F426BDAB0000981BF4 /* UIScrollView+Extensions.swift in Sources */,
 				F29BD1BE26BD752B00981BF4 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
 				F2C96D6226BD062E00A75134 /* BaseService.swift in Sources */,
 				F29BD1C626BD752B00981BF4 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
@@ -569,9 +595,9 @@
 				F2C96D5826BCF16800A75134 /* BaseTableViewCell.swift in Sources */,
 				F2C96D0826BCDBB700A75134 /* AppDelegate.swift in Sources */,
 				F2C96D5E26BCF47200A75134 /* NSObject+Extension.swift in Sources */,
+				F29BD1F326BDAB0000981BF4 /* PullToRefreshAnimator.swift in Sources */,
 				F29BD1DB26BD752C00981BF4 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
-				F29BD17E26BD62C000981BF4 /* Networker.swift in Sources */,
-				F29BD17D26BD62C000981BF4 /* ReachableProtocols.swift in Sources */,
+				F29BD1E226BD8CC900981BF4 /* BaseUserCell.swift in Sources */,
 				F29BD1DA26BD752B00981BF4 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
 				F2C96D6D26BD097800A75134 /* ServerConfig.swift in Sources */,
 				F2C96D0A26BCDBB700A75134 /* SceneDelegate.swift in Sources */,
@@ -581,12 +607,13 @@
 				F2C96D5026BCF0F600A75134 /* UserInfoCell.swift in Sources */,
 				F29BD1D926BD752B00981BF4 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
 				F29BD1C526BD752B00981BF4 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
+				F29BD1F126BDAB0000981BF4 /* LoadMoreViewAnimator.swift in Sources */,
+				F29BD1E426BD9AC700981BF4 /* ColorConstant.swift in Sources */,
 				F29BD1D526BD752B00981BF4 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
 				F29BD1CD26BD752B00981BF4 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */,
 				F29BD1D026BD752B00981BF4 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
 				F29BD1D626BD752B00981BF4 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
 				F29BD1B726BD752B00981BF4 /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
-				F29BD17F26BD62C000981BF4 /* Notification+Extention.swift in Sources */,
 				F29BD1CA26BD752B00981BF4 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
 				F29BD1B926BD752B00981BF4 /* NVActivityIndicatorView.swift in Sources */,
 			);
@@ -794,12 +821,20 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		F29BD17626BD5E4E00981BF4 /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+		F29BD1DC26BD7F3100981BF4 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.1.2;
+				minimumVersion = 10.12.0;
+			};
+		};
+		F29BD1F726BDBB0700981BF4 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
 			};
 		};
 		F2C96D1B26BCDCF900A75134 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
@@ -810,28 +845,12 @@
 				minimumVersion = 6.2.0;
 			};
 		};
-		F2C96D2426BCDDEB00A75134 /* XCRemoteSwiftPackageReference "RxRealm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/RxRealm.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.2;
-			};
-		};
 		F2C96D2726BCDF9D00A75134 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 6.3.1;
-			};
-		};
-		F2C96D2A26BCE27D00A75134 /* XCRemoteSwiftPackageReference "pull-to-refresh" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/eggswift/pull-to-refresh.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.9.3;
 			};
 		};
 		F2C96D2D26BCE2B900A75134 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -866,10 +885,20 @@
 			package = F29BD16A26BD484900981BF4 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
 		};
-		F29BD17726BD5E4E00981BF4 /* RxAlamofire */ = {
+		F29BD1DD26BD7F3100981BF4 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F29BD17626BD5E4E00981BF4 /* XCRemoteSwiftPackageReference "RxAlamofire" */;
-			productName = RxAlamofire;
+			package = F29BD1DC26BD7F3100981BF4 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		F29BD1DF26BD7F3100981BF4 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F29BD1DC26BD7F3100981BF4 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		F29BD1F826BDBB0700981BF4 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F29BD1F726BDBB0700981BF4 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 		F2C96D1C26BCDCF900A75134 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -891,20 +920,10 @@
 			package = F2C96D1B26BCDCF900A75134 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
 		};
-		F2C96D2526BCDDEB00A75134 /* RxRealm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F2C96D2426BCDDEB00A75134 /* XCRemoteSwiftPackageReference "RxRealm" */;
-			productName = RxRealm;
-		};
 		F2C96D2826BCDF9D00A75134 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F2C96D2726BCDF9D00A75134 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		F2C96D2B26BCE27D00A75134 /* ESPullToRefresh */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F2C96D2A26BCE27D00A75134 /* XCRemoteSwiftPackageReference "pull-to-refresh" */;
-			productName = ESPullToRefresh;
 		};
 		F2C96D2E26BCE2B900A75134 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

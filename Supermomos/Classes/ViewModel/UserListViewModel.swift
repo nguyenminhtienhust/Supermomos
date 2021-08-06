@@ -10,24 +10,41 @@ import RxSwift
 import RxCocoa
 import RealmSwift
 import RxRealm
+import Reachability
 
 
 class UserListViewModel {
     private let bag = DisposeBag()
-    let listUser : PublishSubject<Results<User>> = PublishSubject()
-    let reachability = Networker.shared
-
+    let listUser = BehaviorRelay<[User]>(value: [User]())
+    let reachability = try! Reachability()
+    var networkStatus = BehaviorRelay<Bool>(value: false)
+    
+    func observerNetwork(){
+        reachability.whenReachable = { reachability in
+            self.networkStatus.accept(true)
+        }
+        reachability.whenUnreachable = { _ in
+            self.networkStatus.accept(false)
+        }
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
+    }
+    
+    
     func fetchUserList(){
-        if reachability.currentStatus != .notReachable {
+        if reachability.connection != .unavailable{
             fetchOnline()
-        }else{//network not available
-            fetchLocal()
+        } else {
+            self.fetchLocal()
         }
     }
     
     
     func fetchOnline(){
-        DataService.getUserList {
+        DataService.getUserListThenSaveLocal {
             self.fetchLocal()
         } fail: { error in
             self.fetchLocal()
@@ -37,13 +54,7 @@ class UserListViewModel {
     func fetchLocal(){
         let realm = try! Realm()
         let users = realm.objects(User.self)
-        self.listUser.onNext(users)
-        self.listUser.onCompleted()
-    }
-    
-    
-    func resetData(){
-        
+        listUser.accept(Array(users))
     }
     
 }

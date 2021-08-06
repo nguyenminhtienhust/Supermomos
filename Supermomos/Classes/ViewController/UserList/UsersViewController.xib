@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UsersViewController" customModule="Supermomos" customModuleProvider="target">
             <connections>
+                <outlet property="networkIconImageView" destination="nwf-6i-sa4" id="9hv-hh-Mc2"/>
                 <outlet property="tableView" destination="cIJ-cL-qRT" id="vJq-i9-FDX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,9 +30,18 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offline" translatesAutoresizingMaskIntoConstraints="NO" id="nwf-6i-sa4">
+                            <rect key="frame" x="369" y="7.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nwf-6i-sa4" secondAttribute="height" id="jsz-He-HoS"/>
+                                <constraint firstAttribute="width" constant="35" id="nI4-Vp-SSw"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="nwf-6i-sa4" firstAttribute="centerY" secondItem="kl1-8Y-hBt" secondAttribute="centerY" id="FbF-kA-qKu"/>
+                        <constraint firstAttribute="trailing" secondItem="nwf-6i-sa4" secondAttribute="trailing" constant="10" id="MFy-EI-odl"/>
                         <constraint firstItem="Z4t-ss-F5O" firstAttribute="centerX" secondItem="kl1-8Y-hBt" secondAttribute="centerX" id="ciN-Dc-9K2"/>
                         <constraint firstAttribute="height" constant="50" id="spo-Rf-8hI"/>
                         <constraint firstItem="Z4t-ss-F5O" firstAttribute="centerY" secondItem="kl1-8Y-hBt" secondAttribute="centerY" id="u1W-fV-HHw"/>
@@ -52,10 +63,11 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cIJ-cL-qRT" secondAttribute="trailing" id="uN8-fc-Ous"/>
                 <constraint firstItem="cIJ-cL-qRT" firstAttribute="top" secondItem="kl1-8Y-hBt" secondAttribute="bottom" id="wab-wp-Ten"/>
             </constraints>
-            <point key="canvasLocation" x="-407" y="123"/>
+            <point key="canvasLocation" x="-407.24637681159425" y="122.54464285714285"/>
         </view>
     </objects>
     <resources>
+        <image name="offline" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

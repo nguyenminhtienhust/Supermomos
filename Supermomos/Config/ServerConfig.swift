@@ -8,4 +8,4 @@
 import Foundation
 
 let UserURL = "https://api.github.com/users"
-
+let UserDetailURL = "https://api.github.com/user/"

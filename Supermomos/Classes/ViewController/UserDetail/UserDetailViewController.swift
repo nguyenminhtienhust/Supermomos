@@ -56,6 +56,7 @@ class UserDetailViewController: BaseViewController {
 }
 
 extension UserDetailViewController {
+    
     fileprivate func setupViewModel(){
         userDetailViewModel = UserDetailViewModel()
         userDetailViewModel.observerNetwork()
@@ -63,6 +64,7 @@ extension UserDetailViewController {
         checkNetwork()
         bindingData()
     }
+    
     fileprivate func startFetchData(){
         userDetailViewModel.fetchUser(userId)
     }

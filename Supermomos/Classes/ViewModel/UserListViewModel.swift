@@ -18,6 +18,8 @@ class UserListViewModel {
     let listUser = BehaviorRelay<[User]>(value: [User]())
     let reachability = try! Reachability()
     var networkStatus = BehaviorRelay<Bool>(value: false)
+    var shouldShowTableView = BehaviorRelay<Bool>(value: true)
+    var message = BehaviorRelay<String>(value: "")
     
     func observerNetwork(){
         reachability.whenReachable = { reachability in
@@ -39,6 +41,7 @@ class UserListViewModel {
             fetchOnline()
         } else {
             self.fetchLocal()
+            self.message.accept("Network not available")
         }
     }
     
@@ -47,6 +50,7 @@ class UserListViewModel {
         DataService.getUserListThenSaveLocal {
             self.fetchLocal()
         } fail: { error in
+            self.message.accept(error.localizedDescription)
             self.fetchLocal()
         }
     }
@@ -54,6 +58,7 @@ class UserListViewModel {
     func fetchLocal(){
         let realm = try! Realm()
         let users = realm.objects(User.self)
+        shouldShowTableView.accept(users.isEmpty)
         listUser.accept(Array(users))
     }
     

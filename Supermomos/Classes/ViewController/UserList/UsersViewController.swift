@@ -17,12 +17,17 @@ class UsersViewController: BaseViewController {
     private let bag = DisposeBag()
     private var userListViewModel: UserListViewModel!
     @IBOutlet weak var networkIconImageView: UIImageView!
+    @IBOutlet weak var emptyIconImageView: UIImageView!
+    @IBOutlet weak var resetButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         showProgress()
         setupViewModel()
+        resetButton.rx.controlEvent(UIControl.Event.touchUpInside).subscribe { event in
+            self.startFetchData() //reset when first time have no network and no data users
+        }.disposed(by: bag)
     }
 
     func setupTableView(){
@@ -39,9 +44,14 @@ class UsersViewController: BaseViewController {
 }
 
 extension UsersViewController {
+    
     fileprivate func setupViewModel(){
         userListViewModel = UserListViewModel.init()
         userListViewModel.observerNetwork()
+        userListViewModel.message.subscribe(onNext: { message in
+            self.view.makeToast(message)
+        }).disposed(by: bag)
+
         startFetchData()
         checkNetwork()
         bindToTableView()
@@ -57,6 +67,7 @@ extension UsersViewController {
     
     fileprivate func bindToTableView(){
         self.hideProgress()
+        userListViewModel.shouldShowTableView.bind(to: tableView.rx.isHidden).disposed(by: bag)
         userListViewModel.listUser.subscribe { [weak self] event in
             self?.tableView.stopPullToRefresh()
         }.disposed(by: bag)
